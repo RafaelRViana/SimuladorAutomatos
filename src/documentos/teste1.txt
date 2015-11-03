@@ -1,0 +1,2 @@
+G={{S,A,B},(a,b),P,S}
+P:{(S;A)(S;aB)(aA;AbS)(aA;a)(B;b)(B;)}

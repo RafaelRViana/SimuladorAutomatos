@@ -1,0 +1,117 @@
+<automato>
+  <alfabeto>
+    <string>0</string>
+    <string>1</string>
+  </alfabeto>
+  <estados>
+    <estado>
+      <XCentral>0</XCentral>
+      <YCentral>0</YCentral>
+      <estados>
+        <estado-interno>
+          <nome>q0</nome>
+          <inicio>true</inicio>
+          <fim>false</fim>
+        </estado-interno>
+      </estados>
+      <transicoes>
+        <transicao>
+          <origem reference="../../.."/>
+          <destino reference="../../.."/>
+          <simbolo>0</simbolo>
+        </transicao>
+        <transicao>
+          <origem reference="../../.."/>
+          <destino reference="../../.."/>
+          <simbolo>1</simbolo>
+        </transicao>
+        <transicao>
+          <origem reference="../../.."/>
+          <destino>
+            <XCentral>0</XCentral>
+            <YCentral>0</YCentral>
+            <estados>
+              <estado-interno>
+                <nome>q1</nome>
+                <inicio>false</inicio>
+                <fim>false</fim>
+              </estado-interno>
+            </estados>
+            <transicoes>
+              <transicao>
+                <origem reference="../../.."/>
+                <destino>
+                  <XCentral>0</XCentral>
+                  <YCentral>0</YCentral>
+                  <estados>
+                    <estado-interno>
+                      <nome>q2</nome>
+                      <inicio>false</inicio>
+                      <fim>false</fim>
+                    </estado-interno>
+                  </estados>
+                  <transicoes>
+                    <transicao>
+                      <origem reference="../../.."/>
+                      <destino>
+                        <XCentral>0</XCentral>
+                        <YCentral>0</YCentral>
+                        <estados>
+                          <estado-interno>
+                            <nome>q3</nome>
+                            <inicio>false</inicio>
+                            <fim>false</fim>
+                          </estado-interno>
+                        </estados>
+                        <transicoes>
+                          <transicao>
+                            <origem reference="../../.."/>
+                            <destino>
+                              <XCentral>0</XCentral>
+                              <YCentral>0</YCentral>
+                              <estados>
+                                <estado-interno>
+                                  <nome>q4</nome>
+                                  <inicio>false</inicio>
+                                  <fim>true</fim>
+                                </estado-interno>
+                              </estados>
+                              <transicoes/>
+                            </destino>
+                            <simbolo>0</simbolo>
+                          </transicao>
+                          <transicao>
+                            <origem reference="../../.."/>
+                            <destino reference="../../transicao/destino"/>
+                            <simbolo>1</simbolo>
+                          </transicao>
+                        </transicoes>
+                      </destino>
+                      <simbolo>0</simbolo>
+                    </transicao>
+                    <transicao>
+                      <origem reference="../../.."/>
+                      <destino reference="../../transicao/destino"/>
+                      <simbolo>1</simbolo>
+                    </transicao>
+                  </transicoes>
+                </destino>
+                <simbolo>0</simbolo>
+              </transicao>
+              <transicao>
+                <origem reference="../../.."/>
+                <destino reference="../../transicao/destino"/>
+                <simbolo>1</simbolo>
+              </transicao>
+            </transicoes>
+          </destino>
+          <simbolo>1</simbolo>
+        </transicao>
+      </transicoes>
+    </estado>
+    <estado reference="../estado/transicoes/transicao[3]/destino"/>
+    <estado reference="../estado/transicoes/transicao[3]/destino/transicoes/transicao/destino"/>
+    <estado reference="../estado/transicoes/transicao[3]/destino/transicoes/transicao/destino/transicoes/transicao/destino"/>
+    <estado reference="../estado/transicoes/transicao[3]/destino/transicoes/transicao/destino/transicoes/transicao/destino/transicoes/transicao/destino"/>
+  </estados>
+</automato>

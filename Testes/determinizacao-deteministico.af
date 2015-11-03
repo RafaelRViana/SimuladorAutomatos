@@ -1,0 +1,49 @@
+<automato>
+  <alfabeto>
+    <string>a</string>
+    <string>b</string>
+  </alfabeto>
+  <estados>
+    <estado>
+      <XCentral>0</XCentral>
+      <YCentral>0</YCentral>
+      <estados>
+        <estado-interno>
+          <nome>q0</nome>
+          <inicio>true</inicio>
+          <fim>false</fim>
+        </estado-interno>
+      </estados>
+      <transicoes>
+        <transicao>
+          <origem reference="../../.."/>
+          <destino reference="../../.."/>
+          <simbolo>a</simbolo>
+        </transicao>
+        <transicao>
+          <origem reference="../../.."/>
+          <destino>
+            <XCentral>0</XCentral>
+            <YCentral>0</YCentral>
+            <estados>
+              <estado-interno>
+                <nome>q1</nome>
+                <inicio>false</inicio>
+                <fim>true</fim>
+              </estado-interno>
+            </estados>
+            <transicoes>
+              <transicao>
+                <origem reference="../../.."/>
+                <destino reference="../../.."/>
+                <simbolo>a</simbolo>
+              </transicao>
+            </transicoes>
+          </destino>
+          <simbolo>b</simbolo>
+        </transicao>
+      </transicoes>
+    </estado>
+    <estado reference="../estado/transicoes/transicao[2]/destino"/>
+  </estados>
+</automato>
